@@ -126,7 +126,7 @@ laser_module_enable                          false            # Whether to activ
 # Hotend temperature control configuration
 temperature_control.hotend.enable            true             # Whether to activate this ( "hotend" ) module at all.
                                                               # All configuration is ignored if false.
-temperature_control.hotend.thermistor_pin    0.25             # Pin for the thermistor to read
+temperature_control.hotend.thermistor_pin    0.23             # Pin for the thermistor to read
 temperature_control.hotend.heater_pin        2.7              # Pin that controls the heater
 temperature_control.hotend.thermistor        EPCOS100K        # see http://smoothieware.org/temperaturecontrol#toc5
 #temperature_control.hotend.beta             4066             # or set the beta value
@@ -168,7 +168,7 @@ temperature_control.hotend.max_pwm          64               # max pwm, 64 is a 
 #temperature_control.hotend2.max_pwm          64               # max pwm, 64 is a good value if driving a 12v resistor with 24v.
 
 temperature_control.bed.enable               true             #
-temperature_control.bed.thermistor_pin       0.26             #
+temperature_control.bed.thermistor_pin       0.24             #
 temperature_control.bed.heater_pin           2.5              #
 temperature_control.bed.thermistor           Honeywell100K    # see http://smoothieware.org/temperaturecontrol#toc5
 #temperature_control.bed.beta                4066             # or set the beta value
