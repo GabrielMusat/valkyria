@@ -14,11 +14,11 @@ delta_segments_per_second                    100              # for deltas only 
 
 # Arm solution configuration : Cartesian robot. Translates mm positions into stepper positions
 arm_solution                                 linear_delta     # selects the delta arm solution
-alpha_steps_per_mm                           160.36              # Steps per mm for alpha stepper
-beta_steps_per_mm                            160.36              # Steps per mm for beta stepper
-gamma_steps_per_mm                           160.36              # Steps per mm for gamma stepper
+alpha_steps_per_mm                           200              # Steps per mm for alpha stepper
+beta_steps_per_mm                            200              # Steps per mm for beta stepper
+gamma_steps_per_mm                           200              # Steps per mm for gamma stepper
 
-arm_length                                   278            # this is the length of an arm from hinge to hinge
+arm_length                                   272.5            # this is the length of an arm from hinge to hinge
 arm_radius                                   138.1            # this is the horizontal distance from hinge to hinge
                                                               # when the effector is centered
 
@@ -276,7 +276,7 @@ leveling-strategy.delta-grid.enable               true     # The strategy must b
 leveling-strategy.delta-grid.radius               128       # Radius of the bed, must be specified. This needs to be at least as big as 
                                                            # the maximum printing radius as moves outside of this will not 
                                                            # be compensated for correctly
-leveling-strategy.delta-grid.size                 15 	   # The size of the grid, for example, 7 causes a 7x7 grid with 49 points. 
+leveling-strategy.delta-grid.size                 15	   # The size of the grid, for example, 7 causes a 7x7 grid with 49 points. 
                                                            # Must be an odd number.
 leveling-strategy.delta-grid.probe_offsets        0,0,0    # Optional probe offsets from the nozzle or tool head
 leveling-strategy.delta-grid.save                 true     # If the saved grid is to be loaded on boot then this must be set to true
